@@ -40,7 +40,7 @@ def option_handler():
                               "https://googleapis.dev/python/google-api-core/latest/auth.html"),
                         required=False)
     parser.add_argument('-rt', '--remove_test_playbooks', type=str2bool,
-                        help='Whether to remove test playbooks from content packs or not.', default=True)
+                        help='Whether to remove test playbooks from content packs or not.', default=False)
 
     return parser.parse_args()
 
